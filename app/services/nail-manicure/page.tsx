@@ -1,27 +1,27 @@
 'use client';
 
-export default function SoulMassagePage() {
+export default function NailManicurePage() {
   return (
     <div className="w-full bg-[#fcfbf9] text-[#2c3e50] selection:bg-[#c5a880] selection:text-white">
       
       {/* Hero Header Section */}
       <section className="relative h-[550px] w-full bg-neutral-900 flex items-center justify-center text-center px-6 overflow-hidden">
         <img 
-          src="/Soul-Massage-2.jpg" 
-          alt="Soul Massage Sanctuary" 
+          src="/Nail-Manicure-Varnish-1.jpg" 
+          alt="Nail Manicure & Varnish Sanctuary" 
           className="absolute inset-0 w-full h-full object-cover opacity-45 scale-105 transition duration-1000"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a232a] via-black/40 to-transparent"></div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-white mt-12">
           <span className="text-[#c5a880] uppercase tracking-[0.3em] text-xs font-semibold mb-3 block">
-            Signature Therapy Sanctuary
+            Precision Hand Grooming &amp; Polish
           </span>
           <h1 className="font-serif text-4xl md:text-6xl font-bold tracking-wide mb-6">
-            Soul Massage (Signature Therapy)
+            Nail Manicure &amp; Varnish
           </h1>
           <p className="text-neutral-300 text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
-            A deep, meditative experience designed to harmonize your body, mind, and spirit through ancient techniques and modern restorative pressure work.
+            Elevate your personal grooming with professional nail care, cuticle treatment, and flawless varnish protection for a clean, polished look.
           </p>
         </div>
       </section>
@@ -35,23 +35,23 @@ export default function SoulMassagePage() {
           <div className="lg:sticky lg:top-28 space-y-8">
             <div className="bg-white p-8 border border-neutral-200 shadow-sm rounded-sm">
               <span className="text-xs uppercase tracking-[0.2em] text-[#c5a880] font-semibold block mb-2">Session Overview</span>
-              <h3 className="font-serif text-2xl font-bold text-[#2c3e50] mb-4">Total Tranquility</h3>
+              <h3 className="font-serif text-2xl font-bold text-[#2c3e50] mb-4">Immaculate Finish</h3>
               <p className="text-neutral-600 text-sm leading-relaxed font-light mb-6">
-                More than just a physical massage, Soul Massage targets deep-seated emotional and physical tension, guiding you into a state of total peace.
+                Comprehensive nail shaping, conditioning, and professional varnish application designed for the modern gentleman or executive.
               </p>
               
               <div className="border-t border-neutral-100 pt-6 space-y-4 text-sm text-neutral-600">
                 <div className="flex justify-between">
                   <span className="font-medium text-[#2c3e50]">Duration:</span>
-                  <span>90 Minutes</span>
+                  <span>45 Minutes</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-[#2c3e50]">Intensity:</span>
-                  <span>Deep / Meditative</span>
+                  <span className="font-medium text-[#2c3e50]">Service Type:</span>
+                  <span>Grooming &amp; Care</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-[#2c3e50]">Environment:</span>
-                  <span>Private Suite</span>
+                  <span>Private Grooming Suite</span>
                 </div>
               </div>
 
@@ -69,7 +69,7 @@ export default function SoulMassagePage() {
             <div className="bg-[#f5f2eb] p-6 border border-neutral-200 text-center rounded-sm">
               <h4 className="font-serif font-bold text-[#2c3e50] mb-2">The Palace Spa Standard</h4>
               <p className="text-xs text-neutral-600 font-light leading-relaxed">
-                Nett pricing with no hidden fees or GST charges. Conducted by certified professional therapists in Singapore.
+                Nett pricing with zero hidden fees. Hygienic, sterilized tools and premium products used in Singapore.
               </p>
             </div>
           </div>
@@ -80,52 +80,52 @@ export default function SoulMassagePage() {
             {/* Introduction Card */}
             <div className="bg-white p-10 md:p-12 border border-neutral-200 shadow-sm rounded-sm">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#2c3e50] mb-6">
-                Reboot Your Inner Energy System
+                The Ultimate Standard in Hand Grooming
               </h2>
               <p className="text-neutral-700 text-base leading-relaxed font-light mb-6">
-                In today&apos;s fast-paced corporate and high-stress environment, mental burnout often manifests physically. Our Soul Massage acts as an intentional sanctuary, utilizing long, rhythmic strokes combined with mindful energy alignment to clear cognitive fog and release trapped muscular tightness.
+                Hands are one of your most visible professional assets. Our <strong className="text-[#2c3e50]">Nail Manicure &amp; Varnish</strong> treatment offers meticulous nail trimming, precise cuticle conditioning, gentle hand exfoliation, and a high-grade protective varnish finish tailored to your preference.
               </p>
               <p className="text-neutral-700 text-base leading-relaxed font-light">
-                Whether you are recovering from heavy workloads or intense physical training, this signature protocol restores your baseline equilibrium.
+                Whether you prefer a clean, natural matte finish or a neat protective gloss, this service ensures your hands look impeccably well-maintained and sharp.
               </p>
             </div>
 
-            {/* Why Choose Our Soul Massage? (Grid Cards) */}
+            {/* Why Choose Our Manicure? (Grid Cards) */}
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#2c3e50] mb-8">
-                Why Choose Our Soul Massage?
+                Why Choose Our Nail Manicure &amp; Varnish?
               </h2>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white p-8 border border-neutral-200 shadow-sm rounded-sm hover:border-[#c5a880] transition duration-300">
                   <div className="text-[#c5a880] text-xl font-bold mb-3">01</div>
-                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Deep Emotional Release</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Precision Shaping &amp; Care</h3>
                   <p className="text-neutral-600 text-xs md:text-sm leading-relaxed font-light">
-                    Our therapists use intuitive, slow-paced techniques to help you let go of daily stresses, heavy workloads, and underlying emotional burdens.
+                    Expert nail clipping, filing, and buffing to prevent splitting, hangnails, and uneven growth.
                   </p>
                 </div>
 
                 <div className="bg-white p-8 border border-neutral-200 shadow-sm rounded-sm hover:border-[#c5a880] transition duration-300">
                   <div className="text-[#c5a880] text-xl font-bold mb-3">02</div>
-                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Mind-Body Connection</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Healthy Cuticle Maintenance</h3>
                   <p className="text-neutral-600 text-xs md:text-sm leading-relaxed font-light">
-                    A specialized flow that actively calms the central nervous system, helping you disconnect from digital noise and reconnect with yourself.
+                    Gentle conditioning treatments that soften and push back cuticles safely, promoting clean nail beds.
                   </p>
                 </div>
 
                 <div className="bg-white p-8 border border-neutral-200 shadow-sm rounded-sm hover:border-[#c5a880] transition duration-300">
                   <div className="text-[#c5a880] text-xl font-bold mb-3">03</div>
-                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Tailored Energy Flow</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Protective Varnish Shield</h3>
                   <p className="text-neutral-600 text-xs md:text-sm leading-relaxed font-light">
-                    We focus on releasing blocked energy channels, leaving you feeling centered, deeply grounded, and completely revitalized.
+                    Application of high-quality strengthening varnish to guard against daily wear, chipping, and dryness.
                   </p>
                 </div>
 
                 <div className="bg-white p-8 border border-neutral-200 shadow-sm rounded-sm hover:border-[#c5a880] transition duration-300">
                   <div className="text-[#c5a880] text-xl font-bold mb-3">04</div>
-                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Pure Sensory Bliss</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#2c3e50] mb-2">Strict Hygiene Standards</h3>
                   <p className="text-neutral-600 text-xs md:text-sm leading-relaxed font-light">
-                    Enhanced with premium therapeutic aromatic oils and curated calming soundscapes to construct an unmatched sanctuary of peace.
+                    All tools are professionally sterilized before every single session to guarantee absolute safety and cleanliness.
                   </p>
                 </div>
               </div>
@@ -136,16 +136,16 @@ export default function SoulMassagePage() {
               <div>
                 <h2 className="font-serif text-2xl font-bold text-[#2c3e50] mb-4">What to Expect During Your Session</h2>
                 <p className="text-neutral-600 text-sm md:text-base leading-relaxed font-light">
-                  In this session, you will experience a sequence of fluid, rhythmic strokes combined with guided mindful breathing techniques. This treatment is profoundly restorative and provides an absolute spiritual and physical reset.
+                  Relax in comfort while your hands are treated to a warm soak, professional nail detailing, cuticle care, light hand massage, and a professional-grade varnish layer for a sleek finish.
                 </p>
               </div>
 
               <div className="border-t border-neutral-100 pt-8">
                 <h3 className="font-serif text-xl font-bold text-[#2c3e50] mb-4">This Treatment is Perfect For:</h3>
                 <ul className="grid md:grid-cols-3 gap-4 text-sm text-neutral-700 font-light">
-                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Mental exhaustion and executive burnout.</li>
-                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Achieving deep meditative tranquility.</li>
-                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Recovery from intense high-stress cycles.</li>
+                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Busy executives needing clean, sharp hand grooming.</li>
+                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Maintaining overall hand and nail hygiene.</li>
+                  <li className="bg-[#fcfbf9] p-4 border border-neutral-200 rounded-sm">Special events, meetings, or routine self-care.</li>
                 </ul>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function SoulMassagePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 bg-white p-4 border border-neutral-200 shadow-sm rounded-sm">
                   <span className="w-6 h-6 rounded-full bg-[#f5f2eb] text-[#c5a880] flex items-center justify-center text-xs font-bold">✓</span>
-                  <span className="text-sm font-medium text-neutral-700">Best For Human Health &amp; Immunity</span>
+                  <span className="text-sm font-medium text-neutral-700">Improves Hand &amp; Nail Hygiene</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white p-4 border border-neutral-200 shadow-sm rounded-sm">
                   <span className="w-6 h-6 rounded-full bg-[#f5f2eb] text-[#c5a880] flex items-center justify-center text-xs font-bold">✓</span>
@@ -164,11 +164,11 @@ export default function SoulMassagePage() {
                 </div>
                 <div className="flex items-center gap-3 bg-white p-4 border border-neutral-200 shadow-sm rounded-sm">
                   <span className="w-6 h-6 rounded-full bg-[#f5f2eb] text-[#c5a880] flex items-center justify-center text-xs font-bold">✓</span>
-                  <span className="text-sm font-medium text-neutral-700">Optimizes Nervous System Balance</span>
+                  <span className="text-sm font-medium text-neutral-700">Prevents Dry Cuticles &amp; Breakage</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white p-4 border border-neutral-200 shadow-sm rounded-sm">
                   <span className="w-6 h-6 rounded-full bg-[#f5f2eb] text-[#c5a880] flex items-center justify-center text-xs font-bold">✓</span>
-                  <span className="text-sm font-medium text-neutral-700">Enhances Sleep Quality &amp; Focus</span>
+                  <span className="text-sm font-medium text-neutral-700">Boosts Professional Presentation</span>
                 </div>
               </div>
             </div>
@@ -181,23 +181,23 @@ export default function SoulMassagePage() {
 
               <div className="space-y-4">
                 <div className="bg-white p-6 border border-neutral-200 shadow-sm rounded-sm">
-                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">Is Soul Massage different from a standard massage?</h4>
+                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">Do you offer natural/matte finishes for men?</h4>
                   <p className="text-neutral-600 text-sm font-light leading-relaxed">
-                    Yes. While a standard massage focuses primarily on superficial muscle knots, Soul Massage integrates energetic, rhythmic, and meditative elements to soothe both the physical frame and psychological state simultaneously.
+                    Yes, absolutely! We offer clear matte or natural buffing options so your nails look clean, healthy, and professionally groomed without any shine.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 border border-neutral-200 shadow-sm rounded-sm">
-                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">Is this massage suitable for beginners?</h4>
+                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">How sanitary are the tools used?</h4>
                   <p className="text-neutral-600 text-sm font-light leading-relaxed">
-                    Absolutely. It is an exceptionally gentle, nurturing, and customized experience, making it perfect for anyone looking to try something deeply restorative.
+                    We adhere to the highest medical-grade sanitation protocols, using individually sterilized tools for every client.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 border border-neutral-200 shadow-sm rounded-sm">
-                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">How will I feel after the session?</h4>
+                  <h4 className="font-serif text-base font-bold text-[#2c3e50] mb-2">How long does a manicure session take?</h4>
                   <p className="text-neutral-600 text-sm font-light leading-relaxed">
-                    Most clients report feeling profoundly calm, clear-headed, and deeply rested. It is routinely described as feeling fully recharged from within.
+                    A standard session takes around 45 minutes, making it quick and convenient for busy schedules.
                   </p>
                 </div>
               </div>

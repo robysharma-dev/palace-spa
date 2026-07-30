@@ -4,32 +4,32 @@ export default function ServicesPage() {
   const servicesList = [
     {
       title: 'Soul Massage',
-      image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80',
+      image: '/Soul-Massage-2.jpg',
       link: '/services/soul-massage'
     },
     {
       title: 'Turkish Bubble Massage',
-      image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80',
+      image: '/Turkish-Bubble-Massage-2.jpg',
       link: '/services/turkish-bubble-massage'
     },
     {
       title: 'Chinese Health Care',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+      image: '/Chinese-health-Care-rqdubt2gx1xug5vptswmq6kio293sd683vlu28rh8g.jpg',
       link: '/services/chinese-health-care'
     },
     {
       title: 'Chinese Massage',
-      image: 'https://images.unsplash.com/photo-1512290900722-9a707b82b7db?auto=format&fit=crop&w=800&q=80',
+      image: '/Chinese-Massage-rqhnb9fstwq9yyo1lg909qw7j3qndapfgb97bkugow.jpg',
       link: '/services/chinese-massage'
     },
     {
       title: 'Facial Treatment Essence',
-      image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+      image: '/spa-massage-young-woman-with-facial-mask-face-indoors-rqaq1amcdo1mtdut9eki9ao6dfa5qiofnarlrimxa8.jpg',
       link: '/services/facial-treatment'
     },
     {
       title: 'Nail Manicure & Varnish',
-      image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80',
+      image: '/Nail-Manicure-Varnish-1.jpg',
       link: '/services/nail-manicure'
     }
   ];
