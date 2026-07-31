@@ -12,28 +12,28 @@ const slides = [
     subtitle: 'THE SHARMA GLOBAL FOUNDATION RECOMMENDED',
     title: 'Organic Fresh Spa Treatment',
     desc: 'Immerse your senses in pure organic luxury designed to melt away deep-seated tension.',
-    features: ['Professional Female Massage Therapies', 'Premium Oils & Wellness Care', 'Private & Relaxing Environment', 'Experienced Massage Therapists']
+    features: ['Professional Female Massage', 'Premium Oils & Care']
   },
   {
     image: '/slide2.jpg',
-    subtitle: 'SINGAPORE’S PREMIER WELLNESS SANCTUARY',
+    subtitle: 'SINGAPORE’S PREMIER SANCTUARY',
     title: 'Revitalizing Foot & Leg Therapy',
-    desc: 'Targeted pressure techniques to revive tired legs, improve circulation, and restore natural balance.',
-    features: ['Deep Lower Body Relief', 'Soothing Foot Reflexology', 'Calming Ambiance', 'Absolute Discretion']
+    desc: 'Targeted pressure techniques to revive tired legs and restore natural balance.',
+    features: ['Deep Lower Body Relief', 'Soothing Reflexology']
   },
   {
     image: '/slide3.jpeg',
     subtitle: 'EXECUTIVE STRESS RELIEF',
     title: 'Head & Temple Relaxation',
-    desc: 'Clear mental exhaustion and dissolve screen fatigue with our bespoke head therapy sessions.',
-    features: ['Tension & Headache Relief', 'Mental Clarity & Calm', 'Expert Pressure Points', 'Private Treatment Rooms']
+    desc: 'Clear mental exhaustion and dissolve screen fatigue with our bespoke head therapy.',
+    features: ['Headache Relief', 'Mental Clarity']
   },
   {
     image: '/slide4.jpeg',
     subtitle: 'PREMIUM RECOVERY EXPERIENCE',
     title: 'Shoulder & Neck Rejuvenation',
-    desc: 'High-impact localized relief built specifically for professionals suffering from stiff upper bodies.',
-    features: ['Targeted Muscle Recovery', 'Posture Stress Release', 'Organic Essential Extracts', 'Personalized Care']
+    desc: 'High-impact localized relief built specifically for professionals with stiff upper bodies.',
+    features: ['Muscle Recovery', 'Posture Stress Release']
   }
 ];
 
@@ -57,8 +57,8 @@ export default function Home() {
   return (
     <div className="bg-[#fcfbf9] text-[#2c3e50] overflow-hidden w-full">
       
-      {/* Hero Section */}
-      <section className="relative h-[85vh] w-full flex items-center justify-start text-white overflow-hidden px-8 md:px-16">
+      {/* Hero Section - Shifted content to bottom using items-end */}
+      <section className="relative h-[650px] md:h-[85vh] w-full flex items-end justify-start text-white overflow-hidden px-5 md:px-16 pb-14 md:pb-16">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -67,47 +67,49 @@ export default function Home() {
             }`}
             style={{ backgroundImage: `url('${slide.image}')` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+            {/* Gradient overlay focused at the bottom for readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent"></div>
           </div>
         ))}
 
-        <div className="relative z-10 max-w-2xl text-left">
-          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-xs font-semibold mb-3 block drop-shadow">
+        <div className="relative z-10 max-w-xl text-left">
+          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-[9px] md:text-xs font-semibold mb-1.5 block drop-shadow">
             {slides[currentSlide].subtitle}
           </span>
-          <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4 tracking-wide text-white drop-shadow-md leading-tight">
+          <h1 className="font-serif text-xl sm:text-2xl md:text-5xl font-bold mb-2 md:mb-4 tracking-wide text-white drop-shadow-md leading-snug">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-sm md:text-base font-light mb-6 text-neutral-200 max-w-lg tracking-wide drop-shadow leading-relaxed">
+          <p className="text-[11px] md:text-base font-light mb-3 md:mb-6 text-neutral-200 tracking-wide drop-shadow leading-relaxed line-clamp-2 md:line-clamp-none">
             {slides[currentSlide].desc}
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 text-xs md:text-sm text-neutral-200">
+          <div className="grid grid-cols-2 gap-2 mb-4 text-[10px] md:text-sm text-neutral-200">
             {slides[currentSlide].features.map((feature, idx) => (
-              <div key={idx} className="flex items-center gap-2">
+              <div key={idx} className="flex items-center gap-1.5">
                 <span className="text-[#e2cba8] font-bold">✓</span>
-                <span>{feature}</span>
+                <span className="truncate">{feature}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex gap-4">
-            <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase transition shadow-lg">
-              Explore Treatments
+          <div className="flex flex-row gap-2">
+            <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center">
+              Explore
             </a>
-            <a href="/services" className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase transition">
-              Our Services
+            <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center">
+              Services
             </a>
           </div>
         </div>
 
-        <div className="absolute bottom-6 left-8 md:left-16 z-20 flex gap-2">
+        {/* Slide indicators moved slightly higher to avoid overlapping */}
+        <div className="absolute bottom-4 right-6 md:left-16 md:right-auto z-20 flex gap-1.5">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentSlide ? 'w-8 bg-[#c5a880]' : 'w-2 bg-white/50'
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                index === currentSlide ? 'w-5 bg-[#c5a880]' : 'w-1.5 bg-white/50'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -116,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* Ultra-Modern Professional Services Section */}
-      <section className="py-28 px-8 md:px-16 w-full bg-white">
+      <section className="py-24 px-6 md:px-16 w-full bg-white">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-[1500px] mx-auto">
           <div>
             <span className="text-[#c5a880] uppercase tracking-[0.2em] text-xs font-semibold mb-3 block">
@@ -129,7 +131,7 @@ export default function Home() {
               At Palace Spa Singapore, we combine professional therapeutic expertise with absolute discretion. Every session is structured to flush out cortisol, relieve deep muscle stiffness, and reset your mental performance.
             </p>
             <a href="/services" className="inline-block bg-[#2c3e50] text-white hover:bg-[#c5a880] px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300 shadow-md">
-              View All Treatments & Pricing →
+              View All Treatments &amp; Pricing →
             </a>
           </div>
 
@@ -158,9 +160,9 @@ export default function Home() {
       </section>
 
       {/* "Who We Are" Section */}
-      <section className="py-24 px-8 md:px-16 w-full bg-[#fcfbf9] border-y border-neutral-200">
+      <section className="py-24 px-6 md:px-16 w-full bg-[#fcfbf9] border-y border-neutral-200">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-[1500px] mx-auto">
-          <div className="relative h-[400px] md:h-[450px] shadow-lg overflow-hidden border border-neutral-200">
+          <div className="relative h-[350px] md:h-[450px] shadow-lg overflow-hidden border border-neutral-200">
             <img 
               src="/about-stone.png" 
               alt="Palace Spa Hot Stone Therapy" 
@@ -172,7 +174,7 @@ export default function Home() {
               Who We Are
             </span>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#2c3e50] tracking-wide mb-6 leading-tight">
-              Professional Spa & Massage Services
+              Professional Spa &amp; Massage Services
             </h2>
             <p className="text-neutral-600 text-sm md:text-base leading-relaxed mb-8">
               At Palace Spa Singapore, we deliver premium massage and wellness experiences in a private, clean, and relaxing environment. Our experienced therapists focus on relieving stress, easing muscle tension, and helping you restore both body and mind with professional care.
@@ -196,8 +198,6 @@ export default function Home() {
       {/* Gallery Section Component */}
       <GallerySection />
 
-      
-      
     </div>
   );
 }
