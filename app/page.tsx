@@ -57,8 +57,8 @@ export default function Home() {
   return (
     <div className="bg-[#fcfbf9] text-[#2c3e50] overflow-hidden w-full">
       
-      {/* Hero Section - Shifted content to bottom using items-end */}
-      <section className="relative h-[650px] md:h-[85vh] w-full flex items-end justify-start text-white overflow-hidden px-5 md:px-16 pb-14 md:pb-16">
+      {/* Hero Section */}
+      <section className="relative h-[520px] md:h-[85vh] w-full flex items-end justify-start text-white overflow-hidden px-5 md:px-16 pb-10 md:pb-16">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -67,25 +67,24 @@ export default function Home() {
             }`}
             style={{ backgroundImage: `url('${slide.image}')` }}
           >
-            {/* Gradient overlay focused at the bottom for readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent"></div>
           </div>
         ))}
 
         <div className="relative z-10 max-w-xl text-left">
-          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-[9px] md:text-xs font-semibold mb-1.5 block drop-shadow">
+          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-[9px] md:text-xs font-semibold mb-1 block drop-shadow">
             {slides[currentSlide].subtitle}
           </span>
-          <h1 className="font-serif text-xl sm:text-2xl md:text-5xl font-bold mb-2 md:mb-4 tracking-wide text-white drop-shadow-md leading-snug">
+          <h1 className="font-serif text-lg sm:text-2xl md:text-5xl font-bold mb-1.5 md:mb-4 tracking-wide text-white drop-shadow-md leading-tight">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-[11px] md:text-base font-light mb-3 md:mb-6 text-neutral-200 tracking-wide drop-shadow leading-relaxed line-clamp-2 md:line-clamp-none">
+          <p className="text-[11px] md:text-base font-light mb-2.5 md:mb-6 text-neutral-200 tracking-wide drop-shadow leading-relaxed line-clamp-2 md:line-clamp-none">
             {slides[currentSlide].desc}
           </p>
 
-          <div className="grid grid-cols-2 gap-2 mb-4 text-[10px] md:text-sm text-neutral-200">
+          <div className="grid grid-cols-2 gap-1.5 mb-3 text-[10px] md:text-sm text-neutral-200">
             {slides[currentSlide].features.map((feature, idx) => (
-              <div key={idx} className="flex items-center gap-1.5">
+              <div key={idx} className="flex items-center gap-1">
                 <span className="text-[#e2cba8] font-bold">✓</span>
                 <span className="truncate">{feature}</span>
               </div>
@@ -93,23 +92,22 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-2">
-            <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center">
+            <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-3.5 py-2 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center">
               Explore
             </a>
-            <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center">
+            <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-3.5 py-2 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center">
               Services
             </a>
           </div>
         </div>
 
-        {/* Slide indicators moved slightly higher to avoid overlapping */}
-        <div className="absolute bottom-4 right-6 md:left-16 md:right-auto z-20 flex gap-1.5">
+        <div className="absolute bottom-3 right-5 md:left-16 md:right-auto z-20 flex gap-1.5">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`h-1.5 rounded-full transition-all duration-300 ${
-                index === currentSlide ? 'w-5 bg-[#c5a880]' : 'w-1.5 bg-white/50'
+                index === currentSlide ? 'w-4 bg-[#c5a880]' : 'w-1.5 bg-white/50'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -117,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ultra-Modern Professional Services Section */}
+      {/* Services Section */}
       <section className="py-24 px-6 md:px-16 w-full bg-white">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-[1500px] mx-auto">
           <div>
