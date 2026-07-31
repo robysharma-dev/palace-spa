@@ -58,7 +58,7 @@ export default function Home() {
     <div className="bg-[#fcfbf9] text-[#2c3e50] overflow-hidden w-full">
       
       {/* Hero Section */}
-      <section className="relative h-[520px] md:h-[85vh] w-full flex items-end justify-start text-white overflow-hidden px-5 md:px-16 pb-10 md:pb-16">
+      <section className="relative h-[480px] md:h-[85vh] w-full flex items-end justify-start text-white overflow-hidden px-5 md:px-16 pb-10 md:pb-16">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -67,38 +67,40 @@ export default function Home() {
             }`}
             style={{ backgroundImage: `url('${slide.image}')` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent"></div>
+            <div className="absolute inset-0 bg-black/40 md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent"></div>
           </div>
         ))}
 
-        <div className="relative z-10 max-w-xl text-left">
-          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-[9px] md:text-xs font-semibold mb-1 block drop-shadow">
+        {/* Text hidden on mobile (hidden), visible on desktop (md:block) */}
+        <div className="relative z-10 max-w-xl text-left hidden md:block">
+          <span className="text-[#e2cba8] uppercase tracking-[0.2em] text-xs font-semibold mb-1 block drop-shadow">
             {slides[currentSlide].subtitle}
           </span>
-          <h1 className="font-serif text-lg sm:text-2xl md:text-5xl font-bold mb-1.5 md:mb-4 tracking-wide text-white drop-shadow-md leading-tight">
+          <h1 className="font-serif text-5xl font-bold mb-4 tracking-wide text-white drop-shadow-md leading-tight">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-[11px] md:text-base font-light mb-2.5 md:mb-6 text-neutral-200 tracking-wide drop-shadow leading-relaxed line-clamp-2 md:line-clamp-none">
+          <p className="text-base font-light mb-6 text-neutral-200 tracking-wide drop-shadow leading-relaxed">
             {slides[currentSlide].desc}
           </p>
 
-          <div className="grid grid-cols-2 gap-1.5 mb-3 text-[10px] md:text-sm text-neutral-200">
+          <div className="grid grid-cols-2 gap-2 mb-6 text-sm text-neutral-200">
             {slides[currentSlide].features.map((feature, idx) => (
-              <div key={idx} className="flex items-center gap-1">
+              <div key={idx} className="flex items-center gap-1.5">
                 <span className="text-[#e2cba8] font-bold">✓</span>
-                <span className="truncate">{feature}</span>
+                <span>{feature}</span>
               </div>
             ))}
           </div>
+        </div>
 
-          <div className="flex flex-row gap-2">
-            <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-3.5 py-2 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center">
-              Explore
-            </a>
-            <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-3.5 py-2 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center">
-              Services
-            </a>
-          </div>
+        {/* Buttons visible on ALL screens (Mobile + Desktop) */}
+        <div className="relative z-10 flex flex-row gap-2 w-full md:w-auto">
+          <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center flex-1 md:flex-none">
+            Explore
+          </a>
+          <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center flex-1 md:flex-none">
+            Services
+          </a>
         </div>
 
         <div className="absolute bottom-3 right-5 md:left-16 md:right-auto z-20 flex gap-1.5">
