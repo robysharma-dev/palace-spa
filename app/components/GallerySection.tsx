@@ -28,14 +28,17 @@ export default function GallerySection() {
     <section className="py-24 px-8 md:px-16 w-full bg-[#557c83]">
       <div className="max-w-[1500px] mx-auto text-center">
         
-        {/* Section Heading */}
+        {/* Section Heading with Updated Middle Road Address */}
         <div className="mb-16">
           <span className="text-[#f5f2eb] uppercase tracking-[0.2em] text-xs font-semibold mb-3 block opacity-80">
             Our Portfolio
           </span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-white tracking-wide leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-white tracking-wide leading-tight mb-3">
             Take A Look Our Gallery
           </h2>
+          <p className="text-white/95 text-xs md:text-sm font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+            📍 Palace Spa Singapore | 116 Middle Rd, #02-01 ICB Enterprise House, Singapore 188972
+          </p>
         </div>
 
         {/* Gallery Grid */}

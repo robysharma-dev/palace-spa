@@ -93,9 +93,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Buttons visible on ALL screens (Mobile + Desktop) */}
+        {/* Buttons visible on ALL screens (Explore jumps directly to #gallery) */}
         <div className="relative z-10 flex flex-row gap-2 w-full md:w-auto">
-          <a href="/contact" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center flex-1 md:flex-none">
+          <a href="#gallery" className="bg-[#c5a880] hover:bg-[#b0936b] text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition shadow-lg text-center flex-1 md:flex-none">
             Explore
           </a>
           <a href="/services" className="border border-white hover:bg-white hover:text-black text-white px-4 py-2.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition text-center flex-1 md:flex-none">
@@ -195,8 +195,10 @@ export default function Home() {
       {/* Testimonial / Google Reviews Section Component */}
       <TestimonialSection />
 
-      {/* Gallery Section Component */}
-      <GallerySection />
+      {/* Gallery Section Component with id for jump anchor */}
+      <div id="gallery">
+        <GallerySection />
+      </div>
 
     </div>
   );
