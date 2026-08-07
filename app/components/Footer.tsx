@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
             <div>
               <strong className="text-white block mb-1">Email:</strong>
-              <p><a href="mailto:info@palacespa.sg" className="hover:text-[#c5a880] transition">info@palacespa.sg</a></p>
+              <p><a href="mailto:info@palacespasingapore.com" className="hover:text-[#c5a880] transition">info@palacespasingapore.com</a></p>
             </div>
           </div>
         </div>
