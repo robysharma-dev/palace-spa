@@ -7,13 +7,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center px-6 md:px-16 py-4 bg-[#0b0b0b]/90 backdrop-blur-md border-b border-white/10 shadow-sm transition-all">
+    <header className="sticky top-0 z-50 flex justify-between items-center px-6 md:px-16 py-3 bg-[#0b0b0b]/90 backdrop-blur-md border-b border-white/10 shadow-sm transition-all">
       <div className="flex items-center">
         <Link href="/">
           <img 
             src="/Palace-spa-logo.png" 
             alt="Palace Spa Logo" 
-            className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </Link>
       </div>
